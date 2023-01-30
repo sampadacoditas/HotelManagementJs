@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <script type="module" src="./javascript/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <button class="rating" id="rating">Rating</button>
+        <div class="giverating" id="giverating">
+            <form class="container1" name="myForm">
+                <h1 class="reviewheading">Review form</h1>
+                <label for="reviewerName">Reviewer Name:</label>
+                <input type="text" id="reviewerName" name="reviewerName" required pattern="[A-Za-z]+">
+                <label for="restrantName">RestaurantName:</label>
+                <input name="restrantName" id="restrantName" type="text">
+                <!-- <datalist id="restname" name="restname"required> -->
+                    <!-- <option value="SurajHotel">SurajHotel</option>
+                    <option value="SuryavanshiHotel">SuryavanshiHotel</option>
+                    <option value="VeggieHotel">VeggieHotel</option>
+                </datalist> -->
+                <label for="Food">FoodRating:</label>
+                <select name="Food" id="Food" >
+                    <!-- <option value="">please choose an option</option> -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="Ambiance">Ambiance:</label>
+                <select name="Ambiance" id="Ambiance">
+                    <!-- <option value="">please choose an option</option> -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="cleanliness">Cleanliness:</label>
+                <select name="cleanliness" id="cleanliness">
+                    <!-- <option value="">please choose an option</option> -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="service">service:</label>
+                <select name="service" id="service">
+                    <!-- <option value="">please choose an option</option> -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="overall">overall:</label>
+                <select name="overall" id="overall">
+                    <!-- <option value="">please choose an option</option> -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="submit"class="submit" id="submit" value="submit">
+            </form>
+        </div>
+        <button class="loginbutton" id="loginbutton">Login</button>
+        <div class="container2" id="container2">
+           <form name="login_details">
+               <div class="login_details" id="login_details">
+                   <h2>LOGIN FOR MANAGEMENT</h2>
+                   <label for="login_name">UserName:</label>
+                   <input type="text" id="login_name" name="login_name">
+                   <label for="password">password:</label>
+                   <input type="password" id="password" name="password">
+                   <button id="send" class="send">Send</button>
+               </div>
+           </form>
+        </div>
+    </main>
+</body>
+</html>
